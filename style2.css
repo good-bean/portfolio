@@ -1,0 +1,149 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root{
+  --color--a: #5c003d;
+  --color--b:  #bba5B0;
+  --color--c: #d4008a;
+  --color--d: #a3a3a3;
+}
+
+/*  ===================
+      nav & header
+    ===================
+*/
+
+nav.bg-dark {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.35), rgba(38,38,38,0.9), rgba(0,0,0,0.35)) !important;
+}
+
+header {
+  background-image: linear-gradient(rgba(92,0,61,0.6),
+    rgba(92,0,61,0.5)),
+    url("img/sailing-stars-bigger.jpg");
+  background-position: center;
+  /* background-blend-mode: overlay; */
+  text-shadow: 2px 2px 1px var(--color--a);
+  border-bottom: 3px solid var(--color--a);
+}
+
+.pfp {
+  width: clamp(100px, 50%, 280px);
+  border-radius: 50%;
+  border: 6px solid var(--color--a);
+  transition-duration: 0.5s;
+	overflow: hidden;
+}
+
+.pfp:hover {
+  border-color: var(--color--c);
+  box-shadow: 0 0 10px var(--color--c);
+	transform: scale(1.1);
+}
+
+/*  ===================
+      mission
+    ===================
+*/
+
+.mission {
+  background-color: var(--color--b);
+  color: var(--color--a);
+}
+
+.mission-img {
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid var(--color--a);
+}
+
+/*  ===================
+      skills
+    ===================
+*/
+
+.skills {
+  background-color: var(--color--a);
+  color: var(--color--b);
+}
+
+/*  ===================
+      inspiration
+    ===================
+*/
+
+.inspo {
+  background-color: var(--color--b);
+  color: var(--color--a);
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0));
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
+/*  ===================
+      contact
+    ===================
+*/
+
+.contact {
+  background-color: var(--color--a);
+  color: var(--color--b);
+}
+
+.contact-link {
+  text-decoration: none;
+  color: var(--color--b);
+}
+
+.contact-link:hover {
+  color: white;
+}
+
+/*  ===================
+      footer
+    ===================
+*/
+
+.footer {
+  background-color: rgb(33,37,41);
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.35), rgba(38,38,38,0.9), rgba(0,0,0,0.35));
+}
+
+/*  ===================
+      scroll to top
+    ===================
+*/
+
+
+.top-a,
+.top-a:hover,
+.top-a:active,
+.top-a:visited,
+.top-a:focus {
+  color: var(--color--a);
+}
+
+.top-b,
+.top-b:hover,
+.top-b:active,
+.top-b:visited,
+.top-b:focus {
+  color: var(--color--b);
+}
